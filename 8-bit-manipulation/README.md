@@ -342,3 +342,37 @@ now NOT will be performed
 ```
 
 Since it is a positive, this is the final value which is 5
+
+### Tips
+
+**Odd Check**
+
+```py
+if n & 1: # n & 1 gives 1 when n is a odd numbers
+  print("is_odd")
+
+```
+
+**Divide by 2**
+
+```py
+x = n >> 1 # this will divide n by 2 without the remained
+```
+
+### Problems
+
+[1. Swap two numbers](1-swap-two-numbers.md)
+
+[2. Check if the i'th bit is set or not](2-check-if-the-ith-bit-is-set-or-not.md)
+
+[3. Setting the i'th bit](3-setting-the-ith-bit.md)
+
+[4. Clearing the i'th bit](4-clearing-the-ith-bit.md)
+
+[5. Toggle the i'th bit](5-toggle-the-ith-bit.md)
+
+[6. Removing the last rightmost set bit](6-removing-the-last-rightmost-set-bit.md)
+
+[7. Check if a number is a pow of 2](7-check-if-no-is-pow-of-2.md)
+
+[8. Count the number of set bits](8-count-the-no-of-set-bits.md)

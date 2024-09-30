@@ -1,2 +1,3 @@
 # dsa-notes
-Data Structure Notes
+
+Data Structure & Algorithms Notes
