@@ -1,8 +1,6 @@
-# DSA Notes
+# Bit Manipulation
 
-## Bit Manipulation
-
-### Decimal to Binary Convertion
+## Decimal to Binary Convertion
 
 (13)<sub>10</sub> -> (?)<sub>2</sub>
 
@@ -39,7 +37,7 @@ def convert_to_binary(n: int) -> str:
 
 **Space Complexity** -> _O(log<sub>2</sub>(n))_
 
-### Binary to Decimal Convertion
+## Binary to Decimal Convertion
 
 (1101)<sub>2</sub> -> (?)<sub>10</sub>
 
@@ -69,13 +67,13 @@ def convert_to_decimal(n: str) -> int:
 
 **Space Complexity** -> _O(1)_
 
-### 1<sup>s</sup> Complement & 2<sup>s</sup> Complement
+## 1<sup>s</sup> Complement & 2<sup>s</sup> Complement
 
-#### 1<sup>s</sup> Complement
+### 1<sup>s</sup> Complement
 
 - flip the bits
 
-#### 2<sup>s</sup> Complement
+### 2<sup>s</sup> Complement
 
 - flip the bits
 - add 1 bit to it
@@ -87,7 +85,7 @@ def convert_to_decimal(n: str) -> int:
       (1s complemnt)            (2s complement)
 ```
 
-#### How are negative numbers stored
+### How are negative numbers stored
 
 The `int` stores 32 bits, as such (31, 30, 29 ..... 2, 1, 0), the 31<sup>st</sup> bit is used to determine if a no if negative or not. It the 31<sup>st</sup> bit is set (is 1) that means it is negative number af it is not set (is 0) then its not set.
 
@@ -182,9 +180,9 @@ and this is how is a negative nnumber stored (31st bit will always be set)
 
 So the total will be **(-2<sup>31</sup>)**
 
-### Operators (AND, OR, XOR, NOT, SHIFT)
+## Operators (AND, OR, XOR, NOT, SHIFT)
 
-#### AND
+### AND
 
 - all 1 -> 1
 - one 0 -> 0
@@ -198,7 +196,7 @@ So the total will be **(-2<sup>31</sup>)**
   0 1 0 1   (9)
 ```
 
-#### OR
+### OR
 
 - all 0 -> 0
 - one 1 -> 1
@@ -212,7 +210,7 @@ So the total will be **(-2<sup>31</sup>)**
   1 1 1 1 (15)
 ```
 
-#### XOR
+### XOR
 
 - even no of 1 -> 0
 - odd no of 1 -> 1
@@ -226,7 +224,7 @@ So the total will be **(-2<sup>31</sup>)**
   1 0 1 0  (10)
 ```
 
-#### Right Shift
+### Right Shift
 
 - bits move to the right by a certain no
 - the bit on the extreme right will go off
@@ -249,7 +247,7 @@ So the total will be **(-2<sup>31</sup>)**
      0 0 1 1             (3)
 ```
 
-#### Left Shift
+### Left Shift
 
 - bits move to the left by a certain no
 - the bit on the extreme left will overflow and can give unexpected numbers
@@ -269,7 +267,7 @@ So the total will be **(-2<sup>31</sup>)**
      1 0 1 0 1 0           (52)
 ```
 
-#### NOT
+### NOT
 
 - 1s complement is performed (flip the bits)
 - check if it's a negative number
@@ -343,7 +341,7 @@ now NOT will be performed
 
 Since it is a positive, this is the final value which is 5
 
-### Tips
+## Tips
 
 **Odd Check**
 
@@ -359,7 +357,7 @@ if n & 1: # n & 1 gives 1 when n is a odd numbers
 x = n >> 1 # this will divide n by 2 without the remained
 ```
 
-### Problems
+## Problems
 
 [1. Swap two numbers](1-swap-two-numbers.md)
 
@@ -378,3 +376,5 @@ x = n >> 1 # this will divide n by 2 without the remained
 [8. Count the number of set bits](8-count-the-no-of-set-bits.md)
 
 [9. Minimum Bit Flips to Convert Number](9-minimum-bit-flips-to-convert-number.md)
+
+[10. Power Set/Printing all subsets](10-print-all-subsets.md)
