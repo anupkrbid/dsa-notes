@@ -376,3 +376,5 @@ x = n >> 1 # this will divide n by 2 without the remained
 [7. Check if a number is a pow of 2](7-check-if-no-is-pow-of-2.md)
 
 [8. Count the number of set bits](8-count-the-no-of-set-bits.md)
+
+[9. Minimum Bit Flips to Convert Number](9-minimum-bit-flips-to-convert-number.md)
