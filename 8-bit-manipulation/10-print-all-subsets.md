@@ -30,14 +30,18 @@ So we loop from 0 -> (2<sup>n</sup>-1), find the binary value and select the ele
 
 ```py
 def print_all_subsets(arr: List[int]):
-    n = len(arr)
-    subsets = 1 << n
+    N = len(arr)
+    subsets = 1 << N
     ans = []
     for num in range(subsets): # loops over each decimal value in subsets
         list = []
-        for i in range(n): # loops over each bit in the array
+        for i in range(N): # loops over each bit in the array
             if (num & (1 << i)) > 0: # checks if the specific bit is set or not
                 list.append(arr[i])
         ans.append(list)
     return ans
 ```
+
+**Time Complexity** -> _O(N2<sup>N</sup>)_ because outer loop loops over all the subsets which is 2<sup>N</sup> and the inner loop loops over the array length which is N
+
+**Space Complexity** -> _O(N2<sup>N</sup>)_
