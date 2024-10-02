@@ -1,6 +1,6 @@
 # Count the number of set bits
 
-**Brute**
+## Solution 1 - Brute
 
 Just convert the decimal to binary and while conveting count the number of 1's
 
@@ -16,7 +16,7 @@ def count_set_bits(n: int):
     return count
 ```
 
-**Better**
+## Solution 2 - Better
 
 This `n & (n-1)` code will unset the right most set bit, and this will be done untill the number becomes 0, at which point all the set bits have been turned off
 

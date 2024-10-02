@@ -343,18 +343,40 @@ Since it is a positive, this is the final value which is 5
 
 ## Tips
 
-**Odd Check**
+### Odd Check
+
+n & 1 gives 1 when n is a odd numbers
+
+This is equivalent to
+
+_if(n % 2 == 1)_
 
 ```py
-if n & 1: # n & 1 gives 1 when n is a odd numbers
+if n & 1:
   print("is_odd")
 
 ```
 
-**Divide by 2**
+### Divide by 2
+
+This will divide n by 2 without the remained
+
+This is equivalent to
+
+_x = n // 2_
 
 ```py
-x = n >> 1 # this will divide n by 2 without the remained
+x = n >> 1
+```
+
+### Power of 2
+
+This is equivalent to
+
+_x = n \* 2<sup>y</sup>_
+
+```py
+x = n << y
 ```
 
 ## Problems
@@ -378,3 +400,13 @@ x = n >> 1 # this will divide n by 2 without the remained
 [9. Minimum Bit Flips to Convert Number](9-minimum-bit-flips-to-convert-number.md)
 
 [10. Power Set/Printing all subsets](10-print-all-subsets.md)
+
+[11. Single Number - I](11-single-number-1.md)
+
+[12. Single Number - 2](12-single-number-2.md)
+
+[13. Single Number - 3](13-single-number-3.md)
+
+[14. XOR of Numbers in a Given Range](14-xor-of-numbers-in-a-given-range.md)
+
+[15. Divide Two Integers without using Multiplication and Division Operators](15-divide-two-integers-using-bitwise-operations.md)
