@@ -55,7 +55,6 @@ def divide_2_number(n: int, d: int):
 
         n = n - (d << count)
         ans = ans + (1 << count)
-    return ans
 
     if ans >= (1 << 31) and not sign: # handling edge case where ans can go beyond max int value
         return (1 << 31) - 1
