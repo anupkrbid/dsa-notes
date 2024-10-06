@@ -28,7 +28,7 @@ class Queue:
         self.curr_size += 1
 
 
-    def pop(self) -> int:
+    def peek(self) -> int:
         if self.front == -1:
             print("Queue Empty\nExiting...")
 
@@ -58,9 +58,9 @@ class Queue:
 
 ### Time & Space Complexity
 
-**Time Complexity - Pop Function** -> _O(1)_
-
 **Time Complexity - Push Function** -> _O(1)_
+
+**Time Complexity - Pop Function** -> _O(1)_
 
 **Time Complexity - Top Function** -> _O(1)_
 

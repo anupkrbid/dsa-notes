@@ -1,12 +1,5 @@
 # Implement Stack using Arrays
 
-These are the operations available in a stack
-
-- push(): Insert the element in the stack
-- pop(): Remove and return the topmost element of the stack
-- top(): Return the topmost element of the stack
-- size(): Return the number of remaining elements in the stack
-
 ## Solution
 
 ```
@@ -22,7 +15,7 @@ class Stack:
         self.arr[self.top] = x
 
 
-    def pop(self) -> int:
+    def peek(self) -> int:
         x = self.arr[self.top]
         self.top -= 1
         return x
