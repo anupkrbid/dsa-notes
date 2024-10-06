@@ -58,3 +58,7 @@ print(len(queue)) # size
 [5. Implement Stack using Queue](5-implement-stack-using-queue.md)
 
 [6. Implement Queue using Stack](6-implement-queue-using-stack.md)
+
+[7. Balanced Parentheses](7-balanced-parentheses.md)
+
+[8. Min Stack](8-min-stack.md)

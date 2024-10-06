@@ -2,7 +2,7 @@
 
 ## Solution
 
-### Algorithms
+### Algorithm
 
 - While pushing we have to reverse the items in the queue so that the pop() and peek() will return the last inserted item
 - for that after er push the item in the queue we pop and push all the existing items int he queue

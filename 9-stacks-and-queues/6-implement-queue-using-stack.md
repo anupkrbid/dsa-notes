@@ -2,7 +2,7 @@
 
 ## Solution 1
 
-### Algorithms
+### Algorithm
 
 - We will be using 2 stacks **S1** and **S2** to implement this
 - when ever a **push()** operation is performed
