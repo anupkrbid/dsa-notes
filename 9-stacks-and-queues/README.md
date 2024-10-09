@@ -114,4 +114,6 @@ anything else  (-1)
 
 ### Monotonic Stack and Queues (we we store data in a specific order)
 
-[15. Next Greater Element](15-next-greater-element.md)
+[15. Next Greater Element - 1](15-next-greater-element-1.md)
+
+[16. Next Greater Element - 2](16-next-greater-element-2.md)

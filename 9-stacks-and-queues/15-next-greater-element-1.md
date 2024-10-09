@@ -1,4 +1,4 @@
-# Next Greater Element
+# Next Greater Element - 1
 
 `[6,0,8,1,3]`
 
@@ -12,7 +12,7 @@ Just iterate through the array and look for the next greater alement and push it
 
 **Time Complexity** -> _O(n<sup>2</sup>)_
 
-**Space Complexity** -> _O(n)_
+**Space Complexity** -> _O(2n)_
 
 ## Solution 2 - Best
 
@@ -21,25 +21,23 @@ Since the greatest element will be on the right side, we can iterate from the ri
 ### Psudo Code
 
 ```py
+from typing import List
+
 def next_greater_element(arr: List[int]) -> List[int]:
     ans = []
     stack = Stack()
     L = len(arr)
 
     for i in range(L-1, -1, -1):
+        while not stack.is_empty() and stack.peek() <= arr[i]:
+            stack.pop()
+
         if stack.is_empty():
-            stack.push(arr[i])
             ans.append(-1)
         else:
-            while not stack.is_empty() and stack.peek() <= arr[i]:
-                stack.pop()
+            ans.append(stack.peek())
 
-            if stack.is_empty():
-                ans.append(-1)
-            else:
-                ans.append(stack.peek())
-
-            stack.push(arr[i])
+        stack.push(arr[i])
 
     return ans.reverse()
 ```
@@ -47,31 +45,29 @@ def next_greater_element(arr: List[int]) -> List[int]:
 ### Code
 
 ```py
+from typing import List
+
 def next_greater_element(arr: List[int]) -> List[int]:
     ans = []
     stack = []
     L = len(arr)
 
     for i in range(L-1, -1, -1):
-        if len(stack) == 0:
-            stack.append(arr[i])
+        while  len(stack) > 0 and stack[-1] <= arr[i]:
+            stack.pop()
+
+        if  len(stack) == 0:
             ans.append(-1)
         else:
-            while  len(stack) > 0 and stack[-1] <= arr[i]:
-                stack.pop()
+            ans.append(stack[-1])
 
-            if  len(stack) == 0:
-                ans.append(-1)
-            else:
-                ans.append(stack[-1])
+        stack.append(arr[i])
 
-            stack.append(arr[i])
-
-    return list(reversed(ans)) # ans[::-1]
+    return list(reversed(ans))  # ans[::-1]
 ```
 
 ### Time & Space Complexity
 
-**Time Complexity** -> _O(n)_
+**Time Complexity** -> _O(2n)_
 
-**Space Complexity** -> _O(n)_
+**Space Complexity** -> _O(2n)_
