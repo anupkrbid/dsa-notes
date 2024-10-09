@@ -16,7 +16,7 @@ Just iterate through the array and look for the next greater alement and push it
 
 ## Solution 2 - Best
 
-Since the greatest element will be on the right side, we can iterate from the right to the left and keep storing the greater element in an **ans** array and also push the current element in to a stack to keep track of the greater elements found till now. And if we come across an elemnt for which the top of the stack is not the greater element then we keep popping the stack till we find the greater element and then push the cureent elemenet and continue
+Since the greatest element will be on the right side, we can iterate from the right to the left and keep storing the greater element in an **ans** array and also push the current element in to a stack to keep track of the greater elements found till now. And if we come across an elemnt for which the top of the stack is not the greater element then we keep popping the stack till we find the greater element and then push the cureent elemenet and continue, and finally return the reversed array
 
 ### Psudo Code
 

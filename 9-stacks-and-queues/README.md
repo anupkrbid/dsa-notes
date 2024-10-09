@@ -117,3 +117,5 @@ anything else  (-1)
 [15. Next Greater Element - 1](15-next-greater-element-1.md)
 
 [16. Next Greater Element - 2](16-next-greater-element-2.md)
+
+[17. Nearest Smaller Element](17-nearest-smaller-element.md)
