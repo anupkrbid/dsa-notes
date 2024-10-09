@@ -112,4 +112,6 @@ anything else  (-1)
 
 [14. Postfix to Prefix Conversion](14-postfix-to-prefix.md)
 
-### Monotonic Stack and Queues
+### Monotonic Stack and Queues (we we store data in a specific order)
+
+[15. Next Greater Element](15-next-greater-element.md)
